@@ -1,0 +1,11 @@
+services:
+
+  db:
+    image: postgres:15.7
+    container_name: db
+    environment:
+      POSTGRES_USER: pg
+      POSTGRES_PASSWORD: pgpassword
+      POSTGRES_DB: db
+    ports:
+      - "5432:5432"
